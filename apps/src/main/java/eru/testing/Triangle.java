@@ -9,6 +9,10 @@ public class Triangle {
     }
 
     public static Type classify(int side1, int side2, int side3) {
+        if(side1 < 0 || side2 < 0 || side3 < 0){
+            throw new NegativeValueException("Sides of a triangle cannot be negative");
+        }
+
         Type type;
 
         if (side1 > side2) {
@@ -49,6 +53,12 @@ public class Triangle {
 class InvalidTriangleException extends RuntimeException {
 
     public InvalidTriangleException(String msg) {
+        super(msg);
+    }
+}
+class NegativeValueException extends RuntimeException {
+
+    public NegativeValueException(String msg) {
         super(msg);
     }
 }
