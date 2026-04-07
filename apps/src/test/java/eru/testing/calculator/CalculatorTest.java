@@ -5,6 +5,10 @@ import org.junit.jupiter.api.Test;
 public class CalculatorTest {
     @Test
     void shouldSumCorrectly(){
-        Calculator calculator = new Calculator(new DummyReader(),new DummyWriter());
+        DummyWriter writer = new DummyWriter();
+        DummyReader reader = new DummyReader();
+        
+        Calculator calculator = new Calculator(reader,writer);
+        calculator.calculate();
     }
 }
