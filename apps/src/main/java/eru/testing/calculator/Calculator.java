@@ -2,6 +2,7 @@ package eru.testing.calculator;
 
 import java.util.InputMismatchException;
 
+
 public class Calculator {
 
     private final Reader reader;
