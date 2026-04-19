@@ -2,6 +2,10 @@ package eru.testing;
 
 import org.junit.jupiter.api.Test;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.core.IsEqual.equalTo;
+import static org.junit.jupiter.api.Assertions.*;
+
 /**
  * DIF2 Test Class - Defects, Infections and Failures (Part 2)
  *
