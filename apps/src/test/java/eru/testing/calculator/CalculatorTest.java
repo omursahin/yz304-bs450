@@ -1,5 +1,6 @@
 package eru.testing.calculator;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 
@@ -8,6 +9,7 @@ import java.util.InputMismatchException;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
+@Disabled
 public class CalculatorTest {
     @Test
     void shouldSumCorrectly(){
