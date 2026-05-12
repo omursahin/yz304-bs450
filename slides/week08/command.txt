@@ -1,0 +1,1 @@
+evomaster --blackBox true --bbSwaggerUrl http://localhost:8080/openapi.yaml
